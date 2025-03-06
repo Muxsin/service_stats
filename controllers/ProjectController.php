@@ -10,6 +10,7 @@ class ProjectController extends Controller
 {
     public function actionStats()
     {
+        // Поскольку в техническом задании не была указана разработка функционала логина/регистрации, текущий пользователь задается вручную через переменную.
         $currentUser = 'Иван Иванов';
 
         $projects = Project::find()
