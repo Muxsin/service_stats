@@ -55,7 +55,7 @@ class Project extends \yii\db\ActiveRecord
      */
     public function getServices()
     {
-        return $this->hasMany(Services::class, ['project_id' => 'id']);
+        return $this->hasMany(Service::class, ['project_id' => 'id']);
     }
 
 }
